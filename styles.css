@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  color: #5d5d7d;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  height: 100vh;
+  max-width: 135rem;
+  margin: 0 auto;
+}
+
+.mobileMenu {
+  display: none;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding-left: 12rem;
+  padding-top: 36vh;
+}
+
+.leftContainer h1 {
+  font-size: 7rem;
+  line-height: 8rem;
+}
+
+.leftContainer p {
+  font-size: 2.8rem;
+  line-height: 2.5rem;
+  opacity: 0.6;
+  margin: 1.5rem 0rem 0rem;
+}
+
+.leftContainer a button {
+  background: #9499ea;
+  width: 27rem;
+  height: 6rem;
+  border: none;
+  color: #fff;
+  margin-top: 1.5rem;
+  border-radius: 30px;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.leftContainer a button:hover {
+  opacity: 0.8;
+}
+
+.leftContainer a button:active {
+  opacity: 0.5;
+}
+
+.rightContainer {
+  display: flex;
+  height: 100%;
+  width: 40vw;
+  flex-flow: column nowrap;
+  padding: 1.4rem 0;
+  background: rgb(93, 93, 125, 0.16);
+}
+
+.rightContainer header nav {
+  display: flex;
+  justify-content: center;
+  margin: 1rem auto;
+}
+
+.rightContainer header nav a {
+  text-align: center;
+  font-size: 2.8rem;
+  text-decoration: none;
+  margin: 0 0 0 7%;
+}
+.word2 {
+  opacity: 0.4;
+}
+
+.rightContainer header nav a:hover {
+    opacity: 0.6;
+}
+
+.rightContainer header nav a:active {
+  opacity: 0.3;
+}
+
+.rightContainer img {
+  height: 80%;
+  position: relative;
+  right: 14rem;
+  top: 3rem;
+  width: 43rem;
+}
+
+@media screen and (min-width: 1760px){
+  .leftContainer {
+      padding-top: 23vh;
+   }
+
+  .rightContainer {
+      width: 22vw;
+      width: max(22vw, 56rem);
+  }
+}
+
+@media screen and (max-width: 1759px) and (min-width: 1024px){
+  .container {
+      max-width: 104.8rem;
+  }
+
+  .leftContainer {
+      padding-left: 6rem;
+      padding-top: 34vh;
+   }
+
+   .leftContainer p {
+      margin: 1.5rem 0rem 0rem;
+      font-size: 2.5rem;
+   }
+
+   .rightContainer {
+      position: fixed;
+      right: 0;
+   }
+
+   .rightContainer img {
+      right: 9rem;
+   }
+}
+
+@media screen and (max-width: 1023px) and (min-width: 570px){
+  .container {
+      flex-direction: column;
+      justify-content: center;
+      height: auto;
+      }
+      
+      .leftContainer {
+      align-items: center;
+      padding-left: initial;
+      padding-top: initial;
+      margin-top: 13vh;
+      margin-bottom: 4rem;
+      }
+      
+      .leftContainer h1 {
+      text-align: center;
+      margin-bottom: 3rem;
+      }
+      
+      .leftContainer p {
+      line-height: 2.8rem;
+      }
+      
+      .leftContainer a button {
+      margin-top: 4rem;
+      height: 8rem;
+      width: 69vw;
+      }
+      
+      .mobileMenu {
+      display: flex;
+      justify-content: center;
+      margin: 4rem 0;
+      }
+      
+      .mobileMenu a {
+      font-size: 4.8rem;
+      text-decoration: none;
+      margin: 0px 3%;
+      }
+      
+      .rightContainer header nav {
+      display: none;
+      }
+      
+      .rightContainer {
+      justify-content: center;
+      flex-flow: initial;
+      width: initial;
+      padding: 5rem 0;
+      }
+      
+      .rightContainer img {
+      position: initial;
+      width: 50vw;
+      }
+}
+
+@media screen and (max-width: 569px){
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    }
+    
+    .leftContainer {
+    align-items: center;
+    padding-left: initial;
+    padding-top: initial;
+    margin-top: 6vh;
+    margin-bottom: 4rem;
+    }
+    
+    .leftContainer h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 5rem;
+    line-height: 6rem;
+    }
+    
+    .leftContainer p {
+    line-height: 2.5rem;
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1.5rem 1rem 0rem;
+    }
+    
+    .leftContainer a button {
+    margin-top: 4rem;
+    height: 6rem;
+    width: 85vw;
+    }
+    
+    .mobileMenu {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    }
+    
+    .mobileMenu a {
+    font-size: max(2rem, 7vw);
+    text-decoration: none;
+    margin: 0px 3%;
+    }
+    
+    .rightContainer header nav {
+    display: none;
+    }
+    
+    .rightContainer {
+    justify-content: center;
+    flex-flow: initial;
+    width: initial;
+    padding: 5rem 0;
+    }
+    
+    .rightContainer img {
+    position: initial;
+    width: 50vw;
+    }
+}
