@@ -105,17 +105,51 @@ html {
 }
 
 @media screen and (min-width: 1760px){
+  .container{
+      max-width: 170rem;
+      
+   }
+
   .leftContainer {
-      padding-top: 23vh;
+      padding-top: 36vh;
+      padding-left: initial;
+   }
+
+  .leftContainer h1 {
+      font-size: 12rem;
+      line-height: 14rem;
+   }
+
+  .leftContainer p {
+      font-size: 4rem;
+      line-height: 4.5rem;
+   }
+
+  .leftContainer a button {
+      width: 46rem;
+      height: 9rem;
+      font-size: 5rem;
+      line-height: initial;
    }
 
   .rightContainer {
       width: 22vw;
-      width: max(22vw, 56rem);
+      width: max(22vw, 72rem);
+  }
+
+  .rightContainer header nav a {
+      font-size: 5rem;
+      margin: 0px 0 0 5%;
+  }
+
+  .rightContainer img {
+      right: 22rem;
+      top: 8rem;
+      width: initial;
   }
 }
 
-@media screen and (max-width: 1759px) and (min-width: 1024px){
+@media screen and (max-width: 1759px) and (min-width: 1028px){
   .container {
       max-width: 104.8rem;
   }
@@ -137,6 +171,37 @@ html {
 
    .rightContainer img {
       right: 9rem;
+   }
+}
+
+@media screen and (max-width: 1027px) and (min-width: 1024px) {
+   .leftContainer{
+      padding-left: 5rem;
+      padding-top: 27vh;
+   }
+
+   .leftContainer h1{
+      font-size: 6rem;
+      line-height: 7rem;
+   }
+
+   .leftContainer p {
+      margin: 1.5rem 0rem 0rem;
+      font-size: 2.5rem;
+   }
+
+   .container {
+      max-width: 104.8rem;
+   }
+
+   .rightContainer {
+      position: fixed;
+      right: 0;
+   }
+
+   .rightContainer img {
+      right: 9rem;
+      width: initial;
    }
 }
 
