@@ -111,24 +111,23 @@ html {
    }
 
   .leftContainer {
-      padding-top: 36vh;
-      padding-left: initial;
+      padding-top: 40vh;
    }
 
   .leftContainer h1 {
-      font-size: 12rem;
-      line-height: 14rem;
+      font-size: 10rem;
+      line-height: 12rem;
    }
 
   .leftContainer p {
-      font-size: 4rem;
-      line-height: 4.5rem;
+      font-size: 3rem;
+      line-height: 2.5rem;
    }
 
   .leftContainer a button {
-      width: 46rem;
-      height: 9rem;
-      font-size: 5rem;
+      width: 54rem;
+      height: 7rem;
+      font-size: 4rem;
       line-height: initial;
    }
 
@@ -138,14 +137,15 @@ html {
   }
 
   .rightContainer header nav a {
-      font-size: 5rem;
+      font-size: 4rem;
       margin: 0px 0 0 5%;
   }
 
   .rightContainer img {
-      right: 22rem;
+      right: 15rem;
       top: 8rem;
       width: initial;
+      width: 52rem;
   }
 }
 
